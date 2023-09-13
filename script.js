@@ -7,29 +7,43 @@ listForm.addEventListener('submit', function (e){
 
     const listField = document.getElementById('to-do')
 
-    const newListField = {
-        toDoList: listField.value,
-    }
-
+    const newListField = listField.value
+    
     console.log('nuova lista', newListField)
 
     const newCard = document.createElement('div')
     newCard.classList.add('list-card')
 
     newCard.innerHTML = `
-    <ul>
-    <li>${newListField.toDoList}</li>
-    <button id="buttonlist">Eliminare To-Do</button>
-    </ul>
+    <span onclick="markedAsDone(event)">${newListField}</span>
+    <button id="buttonlist" onclick="deleteTask(event)">Eliminare To-Do</button>
     `
     listField.value = ''
 
     const sectionCard = document.getElementById('list')
     sectionCard.appendChild(newCard)
 
+    // const completeTask = document.getElementsByClassName('list-card')[0]
+    // console.log(completeTask)
+    // completeTask.addEventListener('click', ()=>{
+    // completeTask.style.textDecoration = 'line-through'
+    // })
+
+    // const deleteCard = function(e){
+    //     const clickedButton = e.target
+    //     clickedButton.parentElement.remove()
+    // }
+
+
+
 })
 
-listButton = document.getElementsByClassName('list-card')
-listButton.addEventListener('click', function(e){
-    console.log('mouse passato sopra')
-})
+const markedAsDone = function(e){
+    const clickedSpan = e.target
+    clickedSpan.style.textDecoration = 'line-through'
+}
+
+const deleteTask = function(e){
+    e.target.parentElement.remove()
+}
+
