@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>To-do list</title>
+  </head>
+  <body>
+    <main>
+      <h1>EPICODE's to-do list</h1>
+      <form id="to-do-listform">
+        <div>
+          <label for="to-do">Today's To-do</label>
+          <textarea id="to-do" required rows="3"></textarea>
+        </div>
+        <div id="button">
+          <button class="button-text" type="submit">
+            Inserisci nella to-do list
+          </button>
+        </div>
+      </form>
+    </main>
+    <section>
+      <div id="list"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

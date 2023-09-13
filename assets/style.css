@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500&family=Prata&family=Roboto+Condensed&family=Zilla+Slab:wght@400;600&display=swap');
+
+main{
+	font-family: 'Zilla Slab';
+	text-align: center;
+	margin-top: 5em;
+}
+
+h1{
+    border-radius: 1em;
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    background-color: #cd576c;
+    width: 14em;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#to-do-listform{
+	border-radius: 2em;
+    background-color: #f9cfd76e;
+    padding: 2em 0;
+    width: 50em;
+    display: inline-block;
+}
+
+label{
+	display: block;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+textarea{
+	width: 30em;
+    height: 5em;
+}
+
+#button{
+	padding-top: 2em;
+}
+
+.button-text{
+	border-radius: 2em;
+    height: 2em;
+    background-color: #c7304a;
+    color: white;
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+.list-card{
+	margin-bottom: 2em;
+	font-size: 1.2em;
+}
+
+#list{
+	margin: 2em 1em;
+}
+
+main + section{
+	margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+	background-color: pink;
+}
+
+li{
+	list-style-type: square;
+	padding-bottom: 0.8em;
+}
+
+#buttonlist{
+	border-radius: 2em;
+    height: 1.5em;
+    background-color: #c7304a;
+    color: white;
+    font-size: 0.8em;
+}
+
+ul{
+	height: 4em;
+}
